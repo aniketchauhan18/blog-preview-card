@@ -1,0 +1,106 @@
+body {
+  background-color: hsl(47, 88%, 63%);
+  font-size: 16px;
+  font-family: 'Figtree', sans-serif;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("https://fonts.google.com/specimen/Figtree");
+}
+
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.grand-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 375px;
+  background-color: white;
+  border-radius: 15px;
+  border: 2px solid black;
+  box-shadow: 15px 15px 0px rgba(0, 0, 0, 1);
+}
+
+.parent {
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: center; 
+  flex-direction: column;
+}
+
+.foundation {
+  font-weight: bold;
+  margin-top: 12px;
+  font-size: larger;
+}
+
+svg {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+.span-1 {
+  background-color: hsl(47, 88%, 63%);
+  width: fit-content;
+  padding: 7px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.span-2 {
+  font-size: small;
+}
+
+p{
+  font-size: 16px;
+}
+
+
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 3px
+}
+
+.profile-container > img {
+  width: 30px;
+  height: 30px;
+}
+
+p {
+  font-family: 'Figtree', sans-serif;
+  color: hsl(0, 0%, 50%);
+}
+
+.profile-container > p {
+  font-weight: bold;
+  color: black;
+  letter-spacing: -0.5px;
+}
+
+@media (max-width: 400px) {
+  .grand-parent{
+    width: 290px
+  }
+
+  .parent {
+    width: 270px;
+  }
+
+  svg {
+    width: 270px;
+    border-radius: 50px;
+  }
+}
